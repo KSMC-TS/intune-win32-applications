@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/ksmc-ts/intune-win32-applications/_apis/build/status/KSMC-TS.intune-win32-applications?branchName=main)](https://dev.azure.com/ksmc-ts/intune-win32-applications/_build/latest?definitionId=1&branchName=main)
+
 # Intune Apps with Azure DevOps Integration
 
 This repo can be forked and connected to Azure DevOps Pipelines for automatic builds of the applications listed:
@@ -10,8 +12,8 @@ This repo can be forked and connected to Azure DevOps Pipelines for automatic bu
 - Acrobat Reader DC
 
 # Enhancement wishlist
-- [] Pull in metadata for applications for easier imports into Microsoft Endpoint Manager
-- [] Deploy updated application packages to the connected Intune tenant
+-[] Pull in metadata for applications for easier imports into Microsoft Endpoint Manager
+-[] Deploy updated application packages to the connected Intune tenant
 
 # Application Deployment Methodology
 The applications in this repo are using a combination of technologies for deployment and are tested for deployment via Intune but may work with other deployment tools such as a Labtech script.
