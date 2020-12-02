@@ -1,0 +1,24 @@
+trigger:
+- main
+
+jobs:
+- job: BuildWin32Packages
+  pool:
+    vmImage: windows-latest
+  steps:
+  - task: Powershell@2
+    inputs:
+      targetType: 'inline'
+      script: |
+        $apps = (Get-ChildItem -Directory).name
+        foreach($app in $apps) {
+        Start-Process IntuneWinAppUtil.exe "-c `"$app`" -s `"Deploy.ps1`" -o `"builds\$app`" -q" -Wait
+        Copy-Item builds\$app\Deploy.intunewin $(Build.ArtifactStagingDirectory)\$app.intunewin
+        }
+      errorAction: silentlyContinue
+    displayName: "Build Win32 Packages"
+  - task: PublishPipelineArtifact@1
+    inputs:
+      targetPath: $(Build.ArtifactStagingDirectory)
+      artifactName: IntuneWin32Apps
+    displayName: "Publish Win32 Packages"
