@@ -1,4 +1,4 @@
-[![Build Status](https://dev.azure.com/ksmc-ts/intune-win32-applications/_apis/build/status/KSMC-TS.intune-win32-applications?branchName=main)](https://dev.azure.com/ksmc-ts/intune-win32-applications/_build/latest?definitionId=1&branchName=main)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/KSMC-TS/intune-win32-applications) ![GitHub Release Date](https://img.shields.io/github/release-date/KSMC-TS/intune-win32-applications) ![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/KSMC-TS/intune-win32-applications/latest) [![Build Status](https://dev.azure.com/ksmc-ts/intune-win32-applications/_apis/build/status/KSMC-TS.intune-win32-applications?branchName=main)](https://dev.azure.com/ksmc-ts/intune-win32-applications/_build/latest?definitionId=1&branchName=main)
 
 # Intune Apps with Azure DevOps Integration
 
